@@ -1,3 +1,3 @@
-module github.com/blang/semver
+module github.com/itinance/semver
 
 go 1.14
