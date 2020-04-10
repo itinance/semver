@@ -1,3 +1,8 @@
+*** FORK ***
+
+The original repository is very harsh and oppinated how to act with versions that have a current major of 0 (zero): it throws an error then.
+This fork enables us to manipulate also versions with a Major of 0.   
+
 semver for golang [![Build Status](https://travis-ci.org/blang/semver.svg?branch=master)](https://travis-ci.org/blang/semver) [![GoDoc](https://godoc.org/github.com/blang/semver?status.svg)](https://godoc.org/github.com/blang/semver) [![Coverage Status](https://img.shields.io/coveralls/blang/semver.svg)](https://coveralls.io/r/blang/semver?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/blang/semver)](https://goreportcard.com/report/github.com/blang/semver)
 ======
 
