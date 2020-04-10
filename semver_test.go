@@ -273,9 +273,9 @@ var incrementTests = []incrementTest{
 	{Version{1, 2, 3, nil, nil}, PATCH, false, Version{1, 2, 4, nil, nil}},
 	{Version{1, 2, 3, nil, nil}, MINOR, false, Version{1, 3, 0, nil, nil}},
 	{Version{1, 2, 3, nil, nil}, MAJOR, false, Version{2, 0, 0, nil, nil}},
-	{Version{0, 1, 2, nil, nil}, PATCH, true, Version{}},
-	{Version{0, 1, 2, nil, nil}, MINOR, true, Version{}},
-	{Version{0, 1, 2, nil, nil}, MAJOR, true, Version{}},
+	{Version{0, 1, 2, nil, nil}, PATCH, false, Version{Major: 0, Minor: 1, Patch: 3, Pre: nil, Build: nil}},
+	{Version{0, 1, 2, nil, nil}, MINOR, false, Version{Major: 0, Minor: 2, Patch: 0, Pre: nil, Build: nil}},
+	{Version{0, 1, 2, nil, nil}, MAJOR, false, Version{Major: 1, Minor: 0, Patch: 0, Pre: nil, Build: nil}},
 }
 
 func TestIncrements(t *testing.T) {
